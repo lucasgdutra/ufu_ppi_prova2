@@ -12,11 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
     })
       .then(response => response.text())
       .then(data => {
-        console.log(data); // Handle the response data
+        console.log(data);
+        alert("Cadastro feito com sucesso") // Handle the response data
         // You can also update the UI here to show success or error messages
       })
       .catch(error => {
         console.error('Error:', error);
+        alert("Erro ao realizar cadastro")
       });
   });
 });

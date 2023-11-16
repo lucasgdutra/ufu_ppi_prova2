@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['user_name'] = $user['nome'];
         $_SESSION['user_is_admin'] = (bool)$user['isAdmin'];
         // Redirect to a logged-in page
-        header("Location: /jogos");
+        header("Location: /");
         exit();
       } else {
         $alert_type = "danger";
